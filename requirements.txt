@@ -1,0 +1,21 @@
+requests
+psutil
+send2trash
+ddgs
+spotipy
+pyperclip
+pyautogui
+# Windows-only: precise volume get/set (falls back to media-key simulation
+# via pyautogui if these aren't installed)
+pycaw; sys_platform == "win32"
+comtypes; sys_platform == "win32"
+pyautogui; sys_platform == "win32"
+
+# Optional: voice control (mic input via offline Whisper transcription,
+# and offline text-to-speech for spoken replies). The app runs fine
+# without these — the mic button / "speak replies" setting just explain
+# what's missing until you install them.
+sounddevice
+numpy
+faster-whisper
+pyttsx3
